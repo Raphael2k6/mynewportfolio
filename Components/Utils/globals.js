@@ -16,7 +16,12 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center; */}
     ${'' /* height: 100vh; */}
     
-    margin: 0 15%;
     padding: 0;
     transition: all 0.5s linear;
+    @media screen and (max-width: 1439px) {
+      ${'' /* margin: 0 5%; */}
+    }
+    @media screen and (min-width: 1440px) {
+      ${'' /* margin: 0 15%; */}
+    }
   }`

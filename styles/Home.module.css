@@ -1,6 +1,7 @@
 
 .container{
   height: 100vh;
+  margin: 0 15%;
 }
 .intro {
   margin-top: 18%;
@@ -17,7 +18,7 @@
 }
 
 .intro span {
-  color: #007CED;
+  color: #F0860D
 }
 .imageholder {
   position: relative;
@@ -41,4 +42,94 @@ bottom: -18px;
 width: auto;
 left: -18px;
 right: -18px;
+}
+
+.social {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+.more button {
+  width: 20rem;
+  padding: 1.5rem;
+  background: #242323;
+  border: 1px solid #F1F1F1;
+  color: #F1F1F1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  /* flex-wrap: wrap; */
+}
+.aboutDetails p {
+  width: 90%;
+  font-size: 1rem;
+  line-height: 150%;
+  /* text-align: center; */
+}
+.techStack{
+  width: 100%;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tools span {
+  background: #242323;
+  border-radius: 5px;
+  color: #F1F1F1;
+  padding: 8px 15px;
+  margin: 10px 10px 10px 0px;
+  border: 1px solid #F1F1F1;
+}
+
+.cv {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 2rem;
+}
+.cv button {
+  width: 10rem;
+  padding: 1rem;
+  background: #F0860D;
+  border: none;
+  color: #F1F1F1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.glass {
+  height: 70vh;
+  width: 80%;
+  padding: 0rem 5%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border: 1px solid rgba(215, 220, 217, 0.5);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), 1px 1px 6px 1px rgba(63, 4, 35, 0.03);
+}
+
+.glass h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
 }
