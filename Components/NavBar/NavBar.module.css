@@ -8,7 +8,7 @@
     top: 0;
     z-index: 10;
     font-size: 1rem;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background: #333333;
     border-bottom: 2px solid #F0860D;
 
 }
@@ -46,7 +46,7 @@
 
 .navLinks a {
    /* // height: 80px; */
-   /* color: #fff; */
+   color: #fff;
     display: flex;
     align-items:center;
     text-decoration: none;
@@ -59,6 +59,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .nav, .navContainer{
+        height: 45px;
+    }
     .navLinks {
         display: none;
     }

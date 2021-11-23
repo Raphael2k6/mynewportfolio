@@ -10,6 +10,9 @@ import profilePic from '../public/img/IMG_20211118_150540.jpg'
 import NavBar from '../Components/NavBar/NavBar';
 import Head from 'next/head'
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillFacebook, AiOutlineArrowDown } from 'react-icons/ai';
+import { IoIosRocket } from 'react-icons/io';
+import { MdSpeed } from 'react-icons/md';
+import { DiResponsive } from 'react-icons/di';
 
 const data = [
   {id: 1, tool: "HTML"},
@@ -20,7 +23,7 @@ const data = [
   {id: 6, tool: "React"},
   {id: 7, tool: "Next.js"},
   {id: 8, tool: "Jquery"},
-  {id: 9, tool: "Node"},
+  {id: 9, tool: "Node.js"},
   {id: 5, tool: "Go"},
   {id: 10, tool: "PostgreSQL"},
   {id: 11, tool: "Docker"},
@@ -62,7 +65,7 @@ export default function Home() {
           <meta name="keywords" content="web design, front-end web development, software engineer, Javascript engineer, React, Redux, Next.js" />
         </Head>
         <section className={styles.container} id="index">
-          <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "2rem" }}>
+          <div className={styles.toggleHolder}>
             <Toggle theme={theme} toggleTheme={toggleTheme} />
           </div>
           <div className={styles.intro}>
@@ -70,8 +73,8 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Picture of the author"
-                width={350} automatically provided
-                height={350} automatically provided
+                width={350} 
+                height={350} 
                 className={styles.image}
               />
             </div>
@@ -84,7 +87,7 @@ export default function Home() {
             <a href="https://linkedin.com/in/raphael-donanu" target="_blank" rel="noopener noreferrer"><AiFillLinkedin style={style}/></a>
             <a href="https://github.com/Raphael2k6" target="_blank" rel="noopener noreferrer"><AiFillGithub style={style}/></a>
             <a href="https://www.facebook.com/raphael.donanu" target="_blank" rel="noopener noreferrer"><AiFillFacebook style={style}/></a>
-            <a href="https://www.instagram.com/raphaeldonanu/?hl=en" target="_blank" rel="noopener noreferrer"> <AiFillInstagram style={style}/></a>
+            <a href="https://www.instagram.com/tonubarii/?hl=en" target="_blank" rel="noopener noreferrer"> <AiFillInstagram style={style}/></a>
           </div>
           <div className={styles.more}>
             <a href="#about">
@@ -98,10 +101,36 @@ export default function Home() {
           <div className={styles.glass}>
             <h1>About me</h1>
             <div className={styles.aboutDetails}>
-              <div>            
-                <p>I am a frontend engineer based in Lagos, Nigeria with experience having worked in various teams of engineers employing diverse tools, 
+              <div> 
+                {/* <div className={styles.aboutIcons}>
+                  <div className={styles.items}>
+                    <div className={styles.space}>
+                      <IoIosRocket style={{fontSize:"3rem"}}/>
+                      <p>Fast load times with no lag</p>
+                    </div>
+                  </div>
+                  <div className={styles.items}>
+                    <div className={styles.space}>
+                      <MdSpeed style={{fontSize:"3rem"}}/>
+                      <p>Performant applications</p>
+                    </div>
+                  </div>
+                  <div className={styles.items}>
+                    <div className={styles.space}>
+                      <DiResponsive style={{fontSize:"3rem"}}/>
+                      <p>Responsive and accessible designs</p>
+                    </div>
+                  </div>
+                </div>            */}
+                <p>I am a frontend engineer based in Lagos, Nigeria with experience working in various teams of engineers employing diverse tools, 
                 modern frontend technologies, and best practices to build performant and accessible web interphases on 
-                complex applications that provide e-commerce and payment solutions.</p>
+                complex applications that provide e-commerce and payment solutions.
+                <br />
+                <br />
+                I am passionate about building fast, performant and scalable applications with beautiful designs that will leave users happy. 
+                <br />I code for fun, I love learning new things and taking up new challenges. When I am not not coding, I am listening to music and 
+                reading something new.
+                </p>
               </div>
               <div className={styles.techStack}>
                 <h3>Tools and Technologies</h3>

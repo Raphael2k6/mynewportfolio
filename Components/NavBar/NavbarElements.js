@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Link as LinkS} from 'react-scroll';
+// import { Link as LinkS} from 'react-scroll';
 
 export const Nav  = styled.nav`
     ${'' /* background: #000; */}
@@ -45,10 +45,11 @@ export const MobileIcon = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        top: 0;
+        top: 5px;
         right: 0;
         transform: translate(-100, 60%);
-        font-size: 1.8rem;
+        font-size: 2rem;
+        color: #fff;
         cursor: pointer;
     }
 `
@@ -68,7 +69,7 @@ export const NavItem = styled.li`
     height: 80px;
 `
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled.div`
     color: #fff;
     display: flex;
     align-items:center;
