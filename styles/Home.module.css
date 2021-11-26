@@ -2,6 +2,31 @@
 .container{
   height: 100vh;
   margin: 0 15%;
+  background: 
+    linear-gradient(#F0860D 0 0) 0    0/0   100%,
+    linear-gradient(#F0860D 0 0) 205% 0/50% 100%
+    #000;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: .3s linear,background-position .3s .3s linear;
+  /* background-image: url('../public/img/oxmfbKdt+1VNHsKmDP5dloje4mrHY2WL05aR_zlSPKg8D++73y4w49RmCX5IW+nRbrnk8LTxVyn74MGtZymY880fD_xerxSIRCv6KqT56adzTXMd9OPdGrzV6Igucq586erf38JCAypVOmT68a_8hQv5GTnb34YitQftGOaNp4P_12fftAOtfUBsFYBRqzotAcaA6lbO6TJ0X8cyS5LnQ8AHwb2TOIuSHZRv1iV0VY5Q60D.jpeg'); */
+}
+.container:before {
+  content:"";
+  position: absolute;
+  inset:auto 0 0;
+  height: 15px;
+  background: 
+    linear-gradient(#F0860D 0 0) 0    0/0   100%,
+    linear-gradient(#F0860D 0 0) 205% 0/50% 100%;
+  background-repeat: no-repeat;
+  transition: .3s linear,background-size .3s .3s linear;
+}
+.container:hover,
+.container:hover:before {
+  background-size: 51% 100%;
+  background-position: 0 0,100% 0;
 }
 .toggleHolder {
   display: flex;
@@ -20,7 +45,10 @@
 .text {
   font-size: 1.8rem;
   width: 55%;
+  
 }
+
+
 
 .intro span {
   color: #F0860D
@@ -69,6 +97,13 @@ right: -18px;
   color: #F1F1F1;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.9s ease 0s
+}
+.more button:hover {
+  /* background: transparent; */
+  border: 2px solid #F0860D;
+  color: #F0860D;
+  
 }
 
 .about {
@@ -120,6 +155,13 @@ right: -18px;
   color: #F1F1F1;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.9s ease 0s
+}
+
+.cv button:hover {
+  background: transparent;
+  border: 2px solid #F0860D;
+  color: #F0860D;
 }
 
 .glass {
@@ -172,19 +214,23 @@ right: -18px;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     height: 100vh;
     margin: 0 0%;
   }
   .toggleHolder {
-    margin-top: 5px;
+    margin-top: 1rem;
+    margin-right: 1rem;
   }
   .intro {
-    margin-top: 0%;
+    margin-top: 15%;
+  }
+  .imageholder {
+    width: 70%;
   }
   .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 100%;
     text-align: center;
     margin-top: 2rem;
@@ -202,7 +248,7 @@ right: -18px;
   }
   .glass h1 {
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   .aboutDetails {
     margin-top: -1rem;
@@ -233,14 +279,14 @@ right: -18px;
   .aboutDetails p {
     width: 100%;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .tools {
     justify-content: center;
   }
   .tools span {
-    margin: 0px 10px 10px 0px;
-    font-size: 0.8rem;
+    margin: 0px 12px 12px 0px;
+    font-size: 0.7rem;
   }
   .cv {
     justify-content: center;

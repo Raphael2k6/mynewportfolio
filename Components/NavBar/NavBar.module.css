@@ -42,6 +42,14 @@
     border: none;
     border-radius: 2px;
     color: #fff;
+    transition: all 0.9s ease 0s
+
+}
+
+.navLinks button:hover {
+    background: transparent;
+    border: 2px solid #F0860D;
+    color: #F0860D;
 }
 
 .navLinks a {
@@ -53,9 +61,15 @@
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    transition: all 0.9s ease 0s
+
     /* &.active {
         border-bottom: 3px solid 301bf71;
     } */
+}
+
+.navLinks a:hover {
+    color: #F0860D;
 }
 
 @media screen and (max-width: 768px) {

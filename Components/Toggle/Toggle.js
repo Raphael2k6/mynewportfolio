@@ -1,11 +1,7 @@
 import React from 'react'
 import { func, string } from 'prop-types';
-// import ToggleContainer from './Toggle.styled';
 import styled from 'styled-components';
 import Icon from "../Utils/Icons/Icon";
-// Import a couple of SVG files we'll use in the design: https://www.flaticon.com
-// import { ReactComponent as MoonIcon } from 'icons/moon.svg';
-// import { ReactComponent as SunIcon } from 'icons/sun.svg';
 
 
 const ToggleContainer = styled.button`
@@ -14,9 +10,6 @@ const ToggleContainer = styled.button`
   border-radius: 25px;
   cursor: pointer;
   display: flex;
-  ${'' /* font-size: 2rem; */}
-  ${'' /* justify-content: space-between; */}
-  ${'' /* margin: 0 auto; */}
   overflow: hidden;
   padding: 0.2rem;
   ${'' /* position: relative; */}

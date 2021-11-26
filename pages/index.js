@@ -1,53 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../Components/Utils/theme';
 import { GlobalStyles } from '../Components/Utils/globals';
-import Toggle from '../Components/Toggle/Toggle';
 import { useDarkMode } from '../Components/Utils/UseDarkMode';
-import styles from '../styles/Home.module.css'
-import Image from 'next/image'
-import profilePic from '../public/img/IMG_20211118_150540.jpg'
 import NavBar from '../Components/NavBar/NavBar';
-import Head from 'next/head'
-import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillFacebook, AiOutlineArrowDown } from 'react-icons/ai';
-import { IoIosRocket } from 'react-icons/io';
-import { MdSpeed } from 'react-icons/md';
-import { DiResponsive } from 'react-icons/di';
+import SideBar from '../Components/SideBar/SideBar';
+import Header from '../Components/Header/Header'
+import Intro from '../Components/Intro/Intro';
+import About from '../Components/About/About';
 
-const data = [
-  {id: 1, tool: "HTML"},
-  {id: 2, tool: "CSS"},
-  {id: 3, tool: "SASS"},
-  {id: 4, tool: "Javascript"},
-  {id: 5, tool: "Typescript"},
-  {id: 6, tool: "React"},
-  {id: 7, tool: "Next.js"},
-  {id: 8, tool: "Jquery"},
-  {id: 9, tool: "Node.js"},
-  {id: 5, tool: "Go"},
-  {id: 10, tool: "PostgreSQL"},
-  {id: 11, tool: "Docker"},
-  {id: 12, tool: "Git"},
-  // {id: 13, tool: "HTML"},
-  // {id: 14, tool: "HTML"},
-  // {id: 15, tool: "HTML"},
-]
-
-const style = {
-  paddingRight: "6px",
-  fontSize: "30px"
-};
-
-const tools = data.map((datum, id) => {
-  return (
-      <span key={id}>{datum.tool}</span>
-  )
-})
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-
+  // useEffect(() => {
+  //   let mounted = true;
+  //   toggleSidebar();
+  //   return () => {
+  //     mounted = false;
+  //   }
+  // }, [])
+  const toggleSidebar = () => {
+    console.log("I am here");
+    setIsOpen(!isOpen);
+  }
   if (!componentMounted) {
     return <div />
   };
@@ -56,94 +33,15 @@ export default function Home() {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-        <Head>
-          <title>Raphael Donanu</title>
-          <link rel="icon" href="../public/img/favicon.png" />
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta name="description" content="Raphael Donanu, a front-end engineer skilled in HTML, CSS, Javascript, React and Node.js with experience working on databases" />
-          <meta name="author" content="Raphael Donanu" />
-          <meta name="keywords" content="web design, front-end web development, software engineer, Javascript engineer, React, Redux, Next.js" />
-        </Head>
-        <section className={styles.container} id="index">
-          <div className={styles.toggleHolder}>
-            <Toggle theme={theme} toggleTheme={toggleTheme} />
-          </div>
-          <div className={styles.intro}>
-            <div className={styles.imageholder}>
-              <Image
-                src={profilePic}
-                alt="Picture of the author"
-                width={350} 
-                height={350} 
-                className={styles.image}
-              />
-            </div>
-            <div className={styles.text}>
-              <h1>Hello, I'm <span>Raphael Donanu.</span> <br />I am a front-end engineer, <br /> based in Lagos, Nigeria </h1>
-            </div>
-
-          </div>
-          <div className={styles.social}>
-            <a href="https://linkedin.com/in/raphael-donanu" target="_blank" rel="noopener noreferrer"><AiFillLinkedin style={style}/></a>
-            <a href="https://github.com/Raphael2k6" target="_blank" rel="noopener noreferrer"><AiFillGithub style={style}/></a>
-            <a href="https://www.facebook.com/raphael.donanu" target="_blank" rel="noopener noreferrer"><AiFillFacebook style={style}/></a>
-            <a href="https://www.instagram.com/tonubarii/?hl=en" target="_blank" rel="noopener noreferrer"> <AiFillInstagram style={style}/></a>
-          </div>
-          <div className={styles.more}>
-            <a href="#about">
-              <button>More <AiOutlineArrowDown /></button>
-            </a>
-          </div>
-          {/* <h1>It's a {theme === 'light' ? 'light theme' : 'dark theme'}!</h1> */}
-        </section>
-        <NavBar />
-        <section className={styles.about} id="about">
-          <div className={styles.glass}>
-            <h1>About me</h1>
-            <div className={styles.aboutDetails}>
-              <div> 
-                {/* <div className={styles.aboutIcons}>
-                  <div className={styles.items}>
-                    <div className={styles.space}>
-                      <IoIosRocket style={{fontSize:"3rem"}}/>
-                      <p>Fast load times with no lag</p>
-                    </div>
-                  </div>
-                  <div className={styles.items}>
-                    <div className={styles.space}>
-                      <MdSpeed style={{fontSize:"3rem"}}/>
-                      <p>Performant applications</p>
-                    </div>
-                  </div>
-                  <div className={styles.items}>
-                    <div className={styles.space}>
-                      <DiResponsive style={{fontSize:"3rem"}}/>
-                      <p>Responsive and accessible designs</p>
-                    </div>
-                  </div>
-                </div>            */}
-                <p>I am a frontend engineer based in Lagos, Nigeria with experience working in various teams of engineers employing diverse tools, 
-                modern frontend technologies, and best practices to build performant and accessible web interphases on 
-                complex applications that provide e-commerce and payment solutions.
-                <br />
-                <br />
-                I am passionate about building fast, performant and scalable applications with beautiful designs that will leave users happy. 
-                <br />I code for fun, I love learning new things and taking up new challenges. When I am not not coding, I am listening to music and 
-                reading something new.
-                </p>
-              </div>
-              <div className={styles.techStack}>
-                <h3>Tools and Technologies</h3>
-                <div className={styles.tools}>{tools}</div>
-                <div className={styles.cv}>
-                  <a href="https://drive.google.com/file/d/12n3jmityqn8S_NpkT-5gruxqWKsolMJH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <button>Download CV</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Header />
+        <Intro
+          toggleTheme={toggleTheme} 
+          componentMounted={componentMounted} 
+          theme={theme}
+        />
+        <SideBar toggleSidebar={toggleSidebar} isOpen={isOpen} /> 
+        <NavBar toggleSidebar={toggleSidebar}/>
+        <About />
         <footer>
         </footer>
       </>
