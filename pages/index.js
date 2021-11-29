@@ -8,19 +8,13 @@ import SideBar from '../Components/SideBar/SideBar';
 import Header from '../Components/Header/Header'
 import Intro from '../Components/Intro/Intro';
 import About from '../Components/About/About';
+import Projects from '../Components/Projects/Projects';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-  // useEffect(() => {
-  //   let mounted = true;
-  //   toggleSidebar();
-  //   return () => {
-  //     mounted = false;
-  //   }
-  // }, [])
   const toggleSidebar = () => {
     console.log("I am here");
     setIsOpen(!isOpen);
@@ -42,6 +36,7 @@ export default function Home() {
         <SideBar toggleSidebar={toggleSidebar} isOpen={isOpen} /> 
         <NavBar toggleSidebar={toggleSidebar}/>
         <About />
+        <Projects />
         <footer>
         </footer>
       </>

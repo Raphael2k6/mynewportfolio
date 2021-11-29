@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import profilePic from '../../public/img/IMG_20211118_150540.jpg';
@@ -10,7 +10,7 @@ import {
     AiFillFacebook,
     AiOutlineArrowDown
 } from 'react-icons/ai';
-import { useSpring, useTransition, animated, config } from 'react-spring';
+import { composeClasses } from '../Utils/Utils';
 
 
 const style = {
@@ -18,34 +18,9 @@ const style = {
     fontSize: "30px"
 };
 
-// const myName = ["R", "a", "p", "h", "a", "e", "l", "", "D", "o", "n", "a", "n", "u"];
 const myName = "Raphael Donanu"
 const Intro = ({ toggleTheme, theme, componentMounted }) => {
-    const [items, setItems] = useState(myName)
 
-    const transitions = useTransition(items, {
-        from: { opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-        delay: 200,
-        config: config.molasses,
-        onRest: () => setItems([]),
-    })
-
-    useEffect(() => {
-        if (items.length === 0) {
-            setTimeout(() => {
-                setItems(myName)
-            }, 2000)
-        }
-    }, [items])
-
-    const anime = useSpring({ to: { rotateZ: 0 }, from: { rotateZ: 360 }, loop: false, delay: 2000 })
-    // const s = useSpring({
-    //     loop: { reverse: true },
-    //     to: { x: 20 },
-    //     from: { x: 1 },
-    //   })
 
     if (!componentMounted) {
         return <div />
@@ -57,24 +32,19 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
                 <Toggle theme={theme} toggleTheme={toggleTheme} />
             </div>
             <div className={styles.intro}>
-                <div className={styles.imageholder}>
-                    {/* <animated.div style={anime}> */}
-                        <Image
-                            src={profilePic}
-                            alt="Picture of the author"
-                            width={350}
-                            height={350}
-                            className={styles.image}
-                        />
-                    {/* </animated.div> */}
+                <div className={composeClasses(styles.imageholder, styles.animate, styles.pop, styles.delay12)}>
+                    <Image
+                        src={profilePic}
+                        alt="Picture of the author"
+                        width={350}
+                        height={350}
+                        className={styles.image}
+                    />
                 </div>
 
-                <div className={styles.text}>
+                <div className={composeClasses(styles.text, styles.animate, styles.flip, styles.delay2)}>
 
                     <h1>Hello, I'm <span>Raphael Donanu
-                    {/* {transitions(
-                        (styles, item) => item && <animated.span style={styles}>Raphael Donanu</animated.span>
-                    )} */}
                     </span><br />I am a front-end engineer, <br /> based in Lagos, Nigeria </h1>
 
                 </div>

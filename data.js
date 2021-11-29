@@ -1,3 +1,6 @@
+const superapp = `A member of the team that built the frontend of Konga Online Shopping Super Application aggregating all Konga products on a single platform with a single signup.`
+const kongapay = `I redesigned the KongaPay frontend application, and implemented the feature to allow guest users buy digital products without signing up or logging in.`
+const agency = `I work on the KongaPay agency banking application and implemented the KYC process to check fraud.`
 export const data = [
     {id: 1, tool: "HTML"},
     {id: 2, tool: "CSS"},
@@ -17,3 +20,51 @@ export const data = [
     // {id: 15, tool: "HTML"},
   ];
   
+  export const projectData = [
+      {
+        name: superapp,
+        url: "https://new.konga.com",
+        image: "/img/superapp.png"
+      },
+      {
+        name: kongapay,
+        url: "https://kongapay.com",
+        image: "/img/kongapay.png"
+      },
+      {
+        name: agency,
+        url: "https://agents.kongapay.com",
+        image: "/img/agency.png"
+      },
+      // {
+      //   name: "Burger App",
+      //   url: "https://agents.kongapay.com",
+      //   image: ""
+      // },
+      // {
+      //   name: "Face detection App",
+      //   url: "https://agents.kongapay.com",
+      //   image: ""
+      // },
+      // {
+      //   name: "Weather App",
+      //   url: "https://agents.kongapay.com",
+      //   image: ""
+      // },
+      // {
+      //   name: "Simple progress bar",
+      //   url: "https://agents.kongapay.com",
+      //   image: ""
+      // },
+      // {
+      //   name: "Simple CSS background generator",
+      //   url: "https://agents.kongapay.com",
+      //   image: ""
+      // },
+      // {
+      //   name: "Simple CSS background generator",
+      //   url: "https://agents.kongapay.com",
+      //   image: ""
+      // },
+
+  ]
