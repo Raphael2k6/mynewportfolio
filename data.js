@@ -1,6 +1,7 @@
-const superapp = `A member of the team that built the frontend of Konga Online Shopping Super Application aggregating all Konga products on a single platform with a single signup.`
-const kongapay = `I redesigned the KongaPay frontend application, and implemented the feature to allow guest users buy digital products without signing up or logging in.`
-const agency = `I work on the KongaPay agency banking application and implemented the KYC process to check fraud.`
+const superapp = `The Konga Online Shopping Super Application aggregating all Konga products on a single platform with a single signup.`
+const kongapay = `A redesigned of the KongaPay(A Fintech) frontend application, and implementation of the feature to allow guest users buy digital products without signing up or logging in.`
+const agency = `The KongaPay agency banking application and implementation of the KYC process to check fraud.`
+const weather =`A Weather App, it tells the real time weather of any city in the world.`
 export const data = [
     {id: 1, tool: "HTML"},
     {id: 2, tool: "CSS"},
@@ -33,14 +34,14 @@ export const data = [
       },
       {
         name: agency,
-        url: "https://agents.kongapay.com",
+        url: "https://agent.kongapay.com",
         image: "/img/agency.png"
       },
-      // {
-      //   name: "Burger App",
-      //   url: "https://agents.kongapay.com",
-      //   image: ""
-      // },
+      {
+        name: weather,
+        url: "https://weather-app-tan-three.vercel.app/",
+        image: "/img/weatherApp.png"
+      },
       // {
       //   name: "Face detection App",
       //   url: "https://agents.kongapay.com",

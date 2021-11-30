@@ -302,6 +302,8 @@
   }
 }
 
+/* @media screen and (min-width: 767px) { */
+
 
 
 
@@ -329,7 +331,7 @@ Animation System by Neale Van Fleet from Rogue Amoeba
 }
 
 /* Pop In */
-.animate.pop { animation-name: animate-pop; }
+.animate.pop { animation-name: animate-pop;}
 
 @keyframes animate-pop {
   0% {
@@ -467,7 +469,11 @@ Animation System by Neale Van Fleet from Rogue Amoeba
 }
 
 /* Slide In */
-.animate.slide { animation-name: animate-slide; }
+.animate.slide { 
+  animation-name: animate-slide; 
+  /* animation-iteration-count: infinite;
+  animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
 
 @keyframes animate-slide {
   0% {

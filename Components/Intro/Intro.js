@@ -57,7 +57,7 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
                 <a href="https://www.facebook.com/raphael.donanu" target="_blank" rel="noopener noreferrer"><AiFillFacebook style={style} /></a>
                 <a href="https://www.instagram.com/tonubarii/?hl=en" target="_blank" rel="noopener noreferrer"> <AiFillInstagram style={style} /></a>
             </div>
-            <div className={styles.more}>
+            <div className={composeClasses(styles.more, styles.animate, styles.slide, styles.delay3)}>
                 <a href="#about">
                     <button>More <AiOutlineArrowDown /></button>
                 </a>
