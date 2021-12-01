@@ -2,6 +2,8 @@ const superapp = `The Konga Online Shopping Super Application aggregating all Ko
 const kongapay = `A redesigned of the KongaPay(A Fintech) frontend application, and implementation of the feature to allow guest users buy digital products without signing up or logging in.`
 const agency = `The KongaPay agency banking application and implementation of the KYC process to check fraud.`
 const weather =`A Weather App, it tells the real time weather of any city in the world.`
+const background = `A Simple background generator app written with javascript and css to generate beautiful bacground gradient colors for projects.`
+
 export const data = [
     {id: 1, tool: "HTML"},
     {id: 2, tool: "CSS"},
@@ -16,7 +18,7 @@ export const data = [
     {id: 10, tool: "PostgreSQL"},
     {id: 11, tool: "Docker"},
     {id: 12, tool: "Git"},
-    // {id: 13, tool: "HTML"},
+    {id: 13, tool: "React Testing With Jest"},
     // {id: 14, tool: "HTML"},
     // {id: 15, tool: "HTML"},
   ];
@@ -42,11 +44,26 @@ export const data = [
         url: "https://weather-app-tan-three.vercel.app/",
         image: "/img/weatherApp.png"
       },
-      // {
-      //   name: "Face detection App",
-      //   url: "https://agents.kongapay.com",
-      //   image: ""
-      // },
+      {
+        name: background, 
+        url: "https://background.vercel.app/",
+        image: "/img/background.png"
+      },
+      {
+        name: background, 
+        url: "",
+        image: "/img/weatherApp.png"
+      },
+      {
+        name: background, 
+        url: "",
+        image: "/img/weatherApp.png"
+      },
+      {
+        name: background, 
+        url: "",
+        image: "/img/weatherApp.png"
+      },
       // {
       //   name: "Weather App",
       //   url: "https://agents.kongapay.com",

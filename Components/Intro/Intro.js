@@ -18,7 +18,6 @@ const style = {
     fontSize: "30px"
 };
 
-const myName = "Raphael Donanu"
 const Intro = ({ toggleTheme, theme, componentMounted }) => {
 
 

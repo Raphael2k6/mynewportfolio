@@ -40,7 +40,7 @@ margin-top: 4rem;
 .projects {
     position: relative;
     margin: 0.5rem ;
-    width: 45%;
+    width: 30%;
     height: auto;
     background-size: cover;
     border: 1px solid rgba(215, 220, 217, 0.5);
@@ -64,7 +64,7 @@ margin-top: 4rem;
     width: 100%;
     opacity: 0;
     transition: .9s ease;
-    background-color: #008CBA;
+    background-color: #797c7e;
 }
 .projects:hover .overlay {
     opacity: 1;
