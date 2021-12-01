@@ -28,7 +28,7 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
 
     return (
         <Fragment>
-            <section className={classes.containerx} id="index">
+            <section className={classes.containerx} id="index" style={{margin: "0% 15%", height: "100vh"}}>
                 <div className={styles.toggleHolder}>
                     <Toggle theme={theme} toggleTheme={toggleTheme} />
                 </div>
