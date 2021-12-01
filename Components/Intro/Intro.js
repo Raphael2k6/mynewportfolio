@@ -26,7 +26,7 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
     };
 
     return (
-        <section className={styles.container} id="index">
+        <section className={styles.containerx} id="index">
             <div className={styles.toggleHolder}>
                 <Toggle theme={theme} toggleTheme={toggleTheme} />
             </div>
