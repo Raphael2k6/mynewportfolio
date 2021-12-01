@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
+import classes from './Intro.module.css';
 import profilePic from '../../public/img/IMG_20211118_150540.jpg';
 import Toggle from '../Toggle/Toggle';
 import {
@@ -27,7 +28,7 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
 
     return (
         <Fragment>
-            <section className={styles.containerx} id="index">
+            <section className={classes.containerx} id="index">
                 <div className={styles.toggleHolder}>
                     <Toggle theme={theme} toggleTheme={toggleTheme} />
                 </div>
