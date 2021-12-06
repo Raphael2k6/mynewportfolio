@@ -14,7 +14,6 @@
 }
 .text {
   font-size: 1.8rem;
-  width: 55%;
   
 }
 
@@ -135,14 +134,14 @@
 }
 
 .glass {
-  height: 70vh;
+  height: 80vh;
   width: 75%;
   padding: 0rem 5%;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   border: 1px solid rgba(215, 220, 217, 0.5);
   border-radius: 1rem;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), 1px 1px 6px 1px rgba(63, 4, 35, 0.03);
-  transition: all 0.8s ease-in-out 0.8s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 .glass:hover {
@@ -218,8 +217,11 @@
   .social {
     margin-top: 1rem;
   }
+  .about {
+    height: 50rem;
+  }
   .glass {
-    height: 96vh;
+    height: 45rem;
     width: 96%;
     border-radius: 0.5rem;
   }
@@ -269,7 +271,7 @@
     justify-content: center;
   }
   .cv button {
-    width: 20rem;
+    width: 18rem;
   }
 }
 

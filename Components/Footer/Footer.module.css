@@ -1,0 +1,12 @@
+.footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(31, 31, 32, 0.993);
+}
+
+.footer p {
+    color: #F0860D;
+    font-size: 0.8rem;
+}

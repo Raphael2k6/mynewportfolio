@@ -51,17 +51,17 @@ export const data = [
       },
       {
         name: background, 
-        url: "",
+        url: "#",
         image: "/img/weatherApp.png"
       },
       {
         name: background, 
-        url: "",
+        url: "#",
         image: "/img/weatherApp.png"
       },
       {
         name: background, 
-        url: "",
+        url: "#",
         image: "/img/weatherApp.png"
       },
       // {
