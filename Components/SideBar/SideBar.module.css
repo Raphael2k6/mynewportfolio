@@ -16,9 +16,18 @@
     color: #fff;
     cursor: pointer;
 }
+.contactz {
+    width: 7rem;
+    padding: 0.7rem;
+    background: #F0860D;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    transition: all 0.9s ease 0s
+}
 
 .navLinks li:hover {
-    color: #01bf71;
+    color: #E8661C;
     transition: 0.2s ease-in-out
 }
 

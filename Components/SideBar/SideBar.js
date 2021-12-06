@@ -20,7 +20,7 @@ const SideBar = ({ toggleSidebar, isOpen }) => {
                     <li onClick={() => toggleSidebar()}><a href="#index">Home</a></li>
                     <li onClick={() => toggleSidebar()}><a href="#about">About</a></li>
                     <li onClick={() => toggleSidebar()}><a href="#projects">Projects</a></li>
-                    <li onClick={() => toggleSidebar()}><a className="contactz" href="#contact"><button>Contact</button></a></li>
+                    <li onClick={() => toggleSidebar()}><a className={styles.contactz} href="#contact">Contact</a></li>
                 </ul>
             </SidebarWrapper>
             {/* <ListItems /> */}

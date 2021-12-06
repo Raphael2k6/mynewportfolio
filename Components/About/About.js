@@ -15,7 +15,7 @@ const About = () => {
                 <div className={styles.glass}>
                     <h1>About me</h1>
                     <div className={styles.aboutDetails}>
-                        <div>
+                        <div className={styles.aboutText}>
                             <p>I am a frontend engineer based in Lagos, Nigeria with experience working in various teams of engineers employing diverse tools,
                                 modern frontend technologies, and best practices to build performant and accessible web interphases on
                                 complex applications that provide e-commerce and payment solutions.

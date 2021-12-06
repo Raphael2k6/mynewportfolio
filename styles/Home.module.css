@@ -189,6 +189,20 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1439px) {
+  .text {
+    text-align: center;
+  }
+  .about {
+    height: 90vh;
+  }
+  .glass {
+    height: 75vh;
+  }
+  .aboutText{
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .container {
@@ -274,6 +288,8 @@
     width: 18rem;
   }
 }
+
+
 
 /* @media screen and (min-width: 767px) { */
 

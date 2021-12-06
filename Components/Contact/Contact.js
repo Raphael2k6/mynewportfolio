@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { userId, templateId, serviceId } from '../../constants';
 import styles from './Contact.module.css';
@@ -9,30 +9,38 @@ import {
     AiFillFacebook,
 } from 'react-icons/ai';
 import Spinner from '../Spinner/Spinner';
+import Icon from '../Utils/Icons/Icon';
 
 export const ContactUs = () => {
     const [loading, setLoading] = useState(false);
     const [thanks, setThanks] = useState(false);
   const form = useRef();
 
-  const sendEmail = (e) => {
-      if(form.current === null){
-          console.log("hjkhj")
-          return
+  useEffect(() => {
+      let mounted = true;
+      if (mounted) {
+        setThanks(false);
       }
-      setLoading(true);
-    e.preventDefault();
+      return () => {
+         mounted = false;
+      }
+  }, [loading])
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
     emailjs.sendForm(serviceId, templateId, form.current, userId)
       .then((result) => {
           setLoading(false);
-          setThanks(true);
+          setTimeout(() => {
+            setThanks(true);
+          }, 500)
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
   };
-
+  
   const style = {
     paddingRight: "10px",
     fontSize: "35px"
@@ -55,8 +63,10 @@ export const ContactUs = () => {
                 >
                     Send
                 </button>
-                {loading && <Spinner /> }
-                {thanks && <p>Thank you for contacting me.</p>}
+                <div className={styles.message}>
+                    {loading && <img src="/img/spinner.gif" width="60px" style={{marginTop: "10px"}}/> }
+                    {thanks && <p>Thank you for contacting me &#128515;</p>}
+                </div> 
             </form>
             <div className={styles.social}>
                 <a href="https://linkedin.com/in/raphael-donanu" target="_blank" rel="noopener noreferrer"><AiFillLinkedin style={style} /></a>

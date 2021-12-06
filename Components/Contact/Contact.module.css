@@ -66,6 +66,22 @@
 .social {
     margin-top: 1rem;
 }
+.message {
+    margin-top: -1rem;
+}
+
+@media screen and (max-width: 1439px) {
+    .container {
+        height: 80vh;
+    }
+    .formHolder {
+        height: 65vh;
+    }
+    .form {
+        height: 50vh;
+        width: 70%;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .container {
