@@ -1,5 +1,5 @@
 .container {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +33,8 @@
     height: 55vh;
     width: 50%;
     border-radius: 1rem;
-    background: linear-gradient(to right bottom, rgba(60, 50, 109, 0.3), rgba(210, 255, 255, 0.4));
-    box-shadow: 1px 1px 4px rgba(31, 23, 34, 0.1), 1px 1px 6px 1px rgba(4, 46, 63, 0.03);
+    background: linear-gradient(to right bottom, rgba(60, 50, 109, 0.1), rgba(210, 255, 255, 0.1));
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), 1px 1px 6px 1px rgba(63, 4, 35, 0.03);
 }
 .form label {
     margin-bottom: 20px;
@@ -78,13 +78,13 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        height: 90vh;
+        height: 100vh;
     }
     .formHolder {
-        height: 70vh;
+        height: 85vh;
     }
     .form {
-        height: 50vh;
+        height: 35rem;
         width: 30rem;
     }
 }

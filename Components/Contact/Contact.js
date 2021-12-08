@@ -52,11 +52,11 @@ export const ContactUs = () => {
         <p>You can reach out to me for projects and collaborations</p>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <label>Name</label><br /><br />
-                <input type="text" name="user_name" /> <br />
+                <input type="text" name="user_name" placeholder="Name"/> <br />
                 <label>Email</label><br /> <br />
-                <input type="email" name="user_email" /> <br />
+                <input type="email" name="user_email" placeholder="Email"/> <br />
                 <label>Message</label><br /><br />
-                <textarea name="message" /><br />
+                <textarea name="message" placeholder="Message"/><br />
                 <button 
                     type="submit"
                     disabled={loading}
