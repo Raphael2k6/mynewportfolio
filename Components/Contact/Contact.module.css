@@ -1,5 +1,5 @@
 .container {
-    height: 60rem !important;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,13 @@
     border: none;
     border-radius: 2px;
     color: #fff;
-    transition: all 0.9s ease 0s
+    transition: all 0.9s ease 0s;
+    cursor: pointer;
+}
+.form button:hover {
+    background: transparent;
+    border: 1px solid #F0860D;
+    color: #F0860D;
 }
 .social {
     margin-top: 1rem;
@@ -70,16 +76,16 @@
     margin-top: -1rem;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
     .container {
-        height: 80vh;
+        height: 90vh;
     }
     .formHolder {
-        height: 65vh;
+        height: 70vh;
     }
     .form {
         height: 50vh;
-        width: 70%;
+        width: 30rem;
     }
 }
 

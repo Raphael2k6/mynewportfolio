@@ -42,7 +42,8 @@
     border: none;
     border-radius: 2px;
     color: #fff;
-    transition: all 0.9s ease 0s
+    transition: all 0.9s ease 0s;
+    cursor: pointer;
 
 }
 
