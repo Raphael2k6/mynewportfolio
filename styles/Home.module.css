@@ -4,7 +4,7 @@
   margin-top: 2rem;
 }
 .intro {
-  margin-top: 18%;
+  margin-top: 15%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -87,6 +87,9 @@
   align-items: center;
   margin-top: 3rem;
   /* flex-wrap: wrap; */
+}
+.aboutText{
+  width: 90%;
 }
 .aboutDetails p {
   width: 90%;
