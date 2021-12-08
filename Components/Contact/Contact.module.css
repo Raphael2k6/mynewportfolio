@@ -1,5 +1,5 @@
 .container {
-    height: 99vh !important;
+    height: 60rem !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
     width: 75%;
     padding: 0rem 5%;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
