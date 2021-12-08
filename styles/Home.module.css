@@ -203,8 +203,11 @@
   .aboutText{
     width: 100%;
   }
+  .social {
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 @media screen and (max-width: 767px) {
   .container {
     height: 100vh;
@@ -231,6 +234,8 @@
   }
   .social {
     margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
   }
   .about {
     height: 50rem;
