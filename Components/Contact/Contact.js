@@ -6,10 +6,9 @@ import {
     AiFillGithub,
     AiFillLinkedin,
     AiFillInstagram,
-    AiFillFacebook,
+    // AiFillFacebook,
 } from 'react-icons/ai';
-import Spinner from '../Spinner/Spinner';
-import Icon from '../Utils/Icons/Icon';
+
 
 export const ContactUs = () => {
     const [loading, setLoading] = useState(false);
@@ -71,7 +70,7 @@ export const ContactUs = () => {
             <div className={styles.social}>
                 <a href="https://linkedin.com/in/raphael-donanu" target="_blank" rel="noopener noreferrer"><AiFillLinkedin style={style} /></a>
                 <a href="https://github.com/Raphael2k6" target="_blank" rel="noopener noreferrer"><AiFillGithub style={style} /></a>
-                <a href="https://www.facebook.com/raphael.donanu" target="_blank" rel="noopener noreferrer"><AiFillFacebook style={style} /></a>
+                {/* <a href="https://www.facebook.com/raphael.donanu" target="_blank" rel="noopener noreferrer"><AiFillFacebook style={style} /></a> */}
                 <a href="https://www.instagram.com/tonubarii/?hl=en" target="_blank" rel="noopener noreferrer"> <AiFillInstagram style={style} /></a>
             </div>
         </div>
