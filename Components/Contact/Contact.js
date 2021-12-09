@@ -48,6 +48,7 @@ export const ContactUs = () => {
   return (
     <section className={styles.container} id="contact">
         <div className={styles.formHolder}>
+        <h1>Contact me</h1>
         <p>You can reach out to me for projects and collaborations</p>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <label>Name</label><br /><br />
