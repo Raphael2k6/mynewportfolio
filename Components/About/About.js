@@ -17,7 +17,7 @@ const About = () => {
                     <div className={styles.aboutDetails}>
                         <div className={styles.aboutText}>
                             <p>I am a frontend engineer based in Lagos, Nigeria with experience working in various teams of engineers 
-                                employing diverse tools, modern frontend technologies, and best practices to build performant and accessible web interphases on complex applications that provide e-commerce and payment solutions.
+                                employing diverse tools, modern frontend technologies, and best practices to build performant and accessible web interfaces on complex applications that provide e-commerce and payment solutions.
                                 <br />
                                 <br />
                                 I am passionate about building fast, performant, and scalable applications with beautiful designs that will leave users happy.

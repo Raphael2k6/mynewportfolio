@@ -96,6 +96,7 @@
     .formHolder {
         height: 45rem;
         width: 96%;
+        border-radius: 0.5rem;
     }
     .form {
         height: 31rem;
