@@ -3,6 +3,7 @@ const kongapay = `A redesigned of the KongaPay(A Fintech) frontend application, 
 const agency = `The KongaPay agency banking application and implementation of the KYC process to check fraud.`
 const weather =`A Weather App, it tells the real time weather of any city in the world.`
 const background = `A Simple background generator app written with javascript and css to generate beautiful bacground gradient colors for projects.`
+const progressBar = `A simple Javascript progress bar for blog posts.`
 
 export const data = [
   {id: 4, tool: "Javascript"},
@@ -50,9 +51,9 @@ export const data = [
         image: "/img/background.png"
       },
       {
-        name: background, 
-        url: "#",
-        image: "/img/weatherApp.png"
+        name: progressBar, 
+        url: "https://simple-javascript-progress-bar.vercel.app/",
+        image: "/img/progressbar.png"
       },
       {
         name: background, 
