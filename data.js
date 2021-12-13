@@ -17,12 +17,13 @@ export const data = [
   {id: 1, tool: "HTML5"},
   {id: 2, tool: "CSS3"},
   {id: 3, tool: "SCSS"},
+  {id: 15, tool: "Bootstrap"},
+  {id: 15, tool: "Styled Components"},
   {id: 5, tool: "Go"},
   {id: 10, tool: "PostgreSQL"},
   {id: 11, tool: "Docker"},
   {id: 12, tool: "Git"},
-    // {id: 15, tool: "HTML"},
-  ];
+];
   
   export const projectData = [
       {
