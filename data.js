@@ -4,6 +4,7 @@ const agency = `The KongaPay agency banking application and implementation of th
 const weather =`A Weather App, it tells the real time weather of any city in the world.`
 const background = `A Simple background generator app written with javascript and css to generate beautiful bacground gradient colors for projects.`
 const progressBar = `A simple Javascript progress bar for blog posts.`
+const dashboard = `A dashboard for a cryptocurrency Fintech.`
 
 export const data = [
   {id: 1, tool: "Javascript"},
@@ -23,6 +24,7 @@ export const data = [
   {id: 15, tool: "PostgreSQL"},
   {id: 16, tool: "Docker"},
   {id: 17, tool: "Git"},
+  {id: 18, tool: "Ether.js"},
 ];
   
   export const projectData = [
@@ -57,20 +59,10 @@ export const data = [
         image: "/img/progressbar.png"
       },
       {
-        name: background, 
-        url: "#",
-        image: "/img/weatherApp.png"
+        name: dashboard,
+        url: "https://tender-almeida-f19856.netlify.app/",
+        image: "/img/dashboard.png"
       },
-      {
-        name: background, 
-        url: "#",
-        image: "/img/weatherApp.png"
-      },
-      // {
-      //   name: "Weather App",
-      //   url: "https://agents.kongapay.com",
-      //   image: ""
-      // },
       // {
       //   name: "Simple progress bar",
       //   url: "https://agents.kongapay.com",
