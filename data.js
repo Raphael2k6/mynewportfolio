@@ -5,6 +5,7 @@ const weather =`A Weather App, it tells the real time weather of any city in the
 const background = `A Simple background generator app written with javascript and css to generate beautiful bacground gradient colors for projects.`
 const progressBar = `A simple Javascript progress bar for blog posts.`
 const dashboard = `A dashboard for a cryptocurrency Fintech.`
+const newKongaPay = `The new KongaPay frontend mobile-web Application built with Next.js, still in development.`
 
 export const data = [
   {id: 1, tool: "Javascript"},
@@ -44,6 +45,16 @@ export const data = [
         image: "/img/agency.png"
       },
       {
+        name: dashboard,
+        url: "https://tender-almeida-f19856.netlify.app/",
+        image: "/img/dashboard.png"
+      },
+      {
+        name: newKongaPay,
+        url: "https://staging-neutron.kongapay.com/",
+        image: "/img/newkpay.png"
+      },
+      {
         name: weather,
         url: "https://weather-app-tan-three.vercel.app/",
         image: "/img/weatherApp.png"
@@ -58,16 +69,7 @@ export const data = [
         url: "https://simple-javascript-progress-bar.vercel.app/",
         image: "/img/progressbar.png"
       },
-      {
-        name: dashboard,
-        url: "https://tender-almeida-f19856.netlify.app/",
-        image: "/img/dashboard.png"
-      },
-      // {
-      //   name: "Simple progress bar",
-      //   url: "https://agents.kongapay.com",
-      //   image: ""
-      // },
+      
       // {
       //   name: "Simple CSS background generator",
       //   url: "https://agents.kongapay.com",
