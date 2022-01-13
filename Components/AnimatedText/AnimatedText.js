@@ -26,7 +26,7 @@ const AnimatedGradientText = styled.span`
   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: ${hue} 10s infinite linear;
+  -webkit-animation: ${hue} 5s infinite linear;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-feature-settings: "kern";
