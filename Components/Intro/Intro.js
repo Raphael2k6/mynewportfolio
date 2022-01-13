@@ -12,6 +12,7 @@ import {
     AiOutlineArrowDown
 } from 'react-icons/ai';
 import { composeClasses } from '../Utils/Utils';
+import AnimatedText from '../AnimatedText/AnimatedText';
 
 
 const style = {
@@ -45,8 +46,8 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
 
                     <div className={composeClasses(styles.text, styles.animate, styles.flip, styles.delay2)}>
 
-                        <h1>Hello, I'm <span>Raphael Donanu
-                        </span><br /> a front-end engineer <br /> based in Lagos, Nigeria </h1>
+                        <h1>Hello, I'm <AnimatedText>Raphael Donanu
+                        </AnimatedText><br /> a front-end engineer <br /> based in Lagos, Nigeria </h1>
                         <div className={styles.social}>
                             <a href="https://linkedin.com/in/raphael-donanu" target="_blank" rel="noopener noreferrer"><AiFillLinkedin style={style} /></a>
                             <a href="https://github.com/Raphael2k6" target="_blank" rel="noopener noreferrer"><AiFillGithub style={style} /></a>
