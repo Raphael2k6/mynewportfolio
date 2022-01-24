@@ -22,8 +22,8 @@ const hue = keyframes`
  }
 `;
 const AnimatedGradientText = styled.span`
-  color: #f7e9d9;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  color: #f7e9b9;
+  background-image: -webkit-linear-gradient(top, #f35626, #feab3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: ${hue} 5s infinite linear;
