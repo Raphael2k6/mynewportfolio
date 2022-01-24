@@ -20,7 +20,7 @@ const About = () => {
                                 employing diverse tools, modern frontend technologies, and best practices to build performant and accessible web interfaces on complex applications that provide e-commerce and payment solutions.
                                 <br />
                                 <br />
-                                I am passionate about building fast, and scalable applications with beautiful designs that will leave users happy.
+                                I am passionate about building fast, and scalable applications with beautiful designs that will leave users satisfied.
                                 I code for fun, I love learning new things and taking up new challenges. When I am not coding, I am listening to music and reading something new.
                             </p>
                         </div>
