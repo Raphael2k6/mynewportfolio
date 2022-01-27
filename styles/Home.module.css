@@ -111,7 +111,6 @@
   margin: 8px 8px 8px 0px;
   border: 1px solid #F1F1F1;
 }
-
 .cv {
   display: flex;
   /* justify-content: center; */
@@ -623,6 +622,24 @@ Animation System by Neale Van Fleet from Rogue Amoeba
 }
 .delay15 {
   animation-delay: 2s;
+}
+.delay16 {
+  animation-delay: 2.1s;
+}
+.delay17 {
+  animation-delay: 2.2s;
+}
+.delay18 {
+  animation-delay: 2.3s;
+}
+.delay19 {
+  animation-delay: 2.4s;
+}
+.delay20 {
+  animation-delay: 2.5s;
+}
+.delay40 {
+  animation-delay: 4s;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

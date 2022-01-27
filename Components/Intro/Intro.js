@@ -34,7 +34,7 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
                     <Toggle theme={theme} toggleTheme={toggleTheme} />
                 </div>
                 <div className={styles.intro}>
-                    <div className={composeClasses(styles.imageholder, styles.animate, styles.pop, styles.delay12)}>
+                    <div className={composeClasses(styles.imageholder, styles.animate, styles.pop, styles.delay20)}>
                         <Image
                             src={profilePic}
                             alt="Picture of the author"
@@ -59,7 +59,7 @@ const Intro = ({ toggleTheme, theme, componentMounted }) => {
 
 
                 </div>
-                <div className={composeClasses(styles.more, styles.animate, styles.slide, styles.delay3)}>
+                <div className={composeClasses(styles.more, styles.animate, styles.slide, styles.delay40)}>
                     <a href="#about">
                         <button>More <AiOutlineArrowDown /></button>
                     </a>
