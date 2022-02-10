@@ -56,7 +56,7 @@ const About = () => {
                             <h3>Tools and Technologies</h3>
                             <div className={styles.tools} id="tools">{tools}</div>
                             <div className={styles.cv}>
-                                <a href="https://drive.google.com/file/d/1AK0oLmpPowkNGQv78eeKbE8LcSC-FnSf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <a href="https://drive.google.com/file/d/16N81ECZAo1swZI4q3n_Uypcb9VS2nJgS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                     <button>Download CV</button>
                                 </a>
                             </div>
