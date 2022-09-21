@@ -24,11 +24,12 @@ export const data = [
   {id: 12, tool: "SCSS"},
   {id: 13, tool: "Bootstrap"},
   {id: 14, tool: "Styled Components"},
-  {id: 15, tool: "Go"},
+  {id: 15, tool: "MongoDb"},
   {id: 16, tool: "PostgreSQL"},
   {id: 17, tool: "Docker"},
   {id: 18, tool: "Git"},
   {id: 19, tool: "Ether.js"},
+  {id: 20, tool: "Go"},
 ];
   
   export const projectData = [

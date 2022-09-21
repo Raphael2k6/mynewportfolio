@@ -36,6 +36,7 @@ export const ContactUs = () => {
           }, 500)
           console.log(result.text);
       }, (error) => {
+        setLoading(false);
           console.log(error.text);
       });
   };
