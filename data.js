@@ -1,8 +1,10 @@
 const superapp = `The Konga Online Shopping Super Application aggregating all Konga products on a single platform with a single signup.`
 const kongapay = `A redesigned of the KongaPay(A Fintech) frontend application, and implementation of the feature to allow guest users buy digital products without signing up or logging in.`
 const agency = `The KongaPay agency banking application and implementation of the KYC process to check fraud.`
+const cardIssunce = `Card issuance and management platform for a commercial bank`
+const paymentLink = `A payment request link on the KongaPay merchants platform where merchants can generate payment links, share them with customers to receive payments`
 const weather =`A Weather App, it tells the real time weather of any city in the world.`
-const background = `A Simple background generator app written with javascript and css to generate beautiful bacground gradient colors for projects.`
+// const background = `A Simple background generator app written with javascript and css to generate beautiful bacground gradient colors for projects.`
 const progressBar = `A simple Javascript progress bar for blog posts.`
 const dashboard = `A dashboard for a cryptocurrency Fintech.`
 const newKongaPay = `The new KongaPay frontend mobile-web Application built with Next.js, still in development.`
@@ -46,6 +48,11 @@ export const data = [
         image: "/img/agency.png"
       },
       {
+        name: cardIssunce,
+        url: "#",
+        image: "/img/card.png"
+      },
+      {
         name: dashboard,
         url: "https://tender-almeida-f19856.netlify.app/",
         image: "/img/dashboard.png"
@@ -56,15 +63,20 @@ export const data = [
         image: "/img/newkpay.png"
       },
       {
+        name: paymentLink,
+        url: "https://business.kongapay.com/",
+        image: "/img/paymentlink.png"
+      }, 
+      {
         name: weather,
         url: "https://weather-app-tan-three.vercel.app/",
         image: "/img/weatherApp.png"
       },
-      {
-        name: background, 
-        url: "https://background.vercel.app/",
-        image: "/img/background.png"
-      },
+      // {
+      //   name: background, 
+      //   url: "https://background.vercel.app/",
+      //   image: "/img/background.png"
+      // },
       {
         name: progressBar, 
         url: "https://simple-javascript-progress-bar.vercel.app/",
