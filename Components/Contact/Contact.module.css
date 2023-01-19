@@ -30,7 +30,7 @@
 }
 .form {
     padding: 3rem 2rem;
-    height: 55vh;
+    height: 55%;
     width: 50%;
     border-radius: 1rem;
     background: linear-gradient(to right bottom, rgba(60, 50, 109, 0.1), rgba(210, 255, 255, 0.1));
@@ -41,11 +41,12 @@
 }
 .form input{
     width: 100%;
-    height: 3rem;
+    height: 2.5rem;
     margin-bottom: 1rem;
     outline: none;
     border: none;
     border-radius: 2px;
+    text-indent: 0.5rem;
 }
 .form textarea{
     width: 100%;
@@ -53,6 +54,7 @@
     margin-bottom: 1rem;
     outline: none;
     border: none;
+    text-indent: 0.5rem;
 }
 .form button{
     width: 7rem;
@@ -84,7 +86,7 @@
         height: 90%;
     }
     .form {
-        height: 35rem;
+        height: 55%;
         width: 30rem;
     }
 }
