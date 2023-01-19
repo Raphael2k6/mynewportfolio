@@ -6,7 +6,7 @@
 }
 
 .glass {
-    height: 85vh;
+    height: 90%;
     width: 75%;
     padding: 0rem 5%;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
@@ -82,7 +82,7 @@ margin-top: 4rem;
         height: 80vh;
     }
     .glass {
-        height: 75vh;
+        height: 85%;
         border-radius: 0.5rem;
     }
     .hoverText{
@@ -94,11 +94,11 @@ margin-top: 4rem;
 
 @media screen and (max-width: 480px) {
     .projectContainer {
-        height: 31rem;
+        height: 100%;
     }
     .glass {
         width: 96%;
-        height: 32rem;
+        height: 40rem;
     }
     .glass h1 {
         margin: 1.5rem 0rem;
